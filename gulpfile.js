@@ -77,9 +77,9 @@ gulp.task('js:build', function () {
 gulp.task('js:debug', function () {
     gulp.src(path.src.js) 
         .pipe(rigger()) 
-        .pipe(sourcemaps.init()) 
+        // .pipe(sourcemaps.init()) 
         // .pipe(uglify()) 
-        .pipe(sourcemaps.write()) 
+        // .pipe(sourcemaps.write()) 
         .pipe(gulp.dest(path.build.js))
         .pipe(reload({stream: true}));
 });
@@ -149,6 +149,24 @@ gulp.task('watch', function(){
     });
 });
 
+gulp.task('watch_d', function(){
+    watch([path.watch.html], function(event, cb) {
+        gulp.start('html:build');
+    });
+    watch([path.watch.style], function(event, cb) {
+        gulp.start('style:build');
+    });
+    watch([path.watch.js], function(event, cb) {
+        gulp.start('js:debug');
+    });
+    watch([path.watch.img], function(event, cb) {
+        gulp.start('image:build');
+    });
+    watch([path.watch.fonts], function(event, cb) {
+        gulp.start('fonts:build');
+    });
+});
+
 
 gulp.task('default', ['build', 'webserver', 'watch']);
-gulp.task('deb', ['debug', 'webserver', 'watch']);
+gulp.task('deb', ['debug', 'webserver', 'watch_d']);
