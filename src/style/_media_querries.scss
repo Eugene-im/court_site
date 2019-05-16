@@ -1,0 +1,292 @@
+@media (max-width: 1360px) {
+    div.section .content {
+        padding-left: 140px;
+    }
+}
+
+@media (max-width: 1244px) {
+    .section__first .header__menu {
+        display: none;
+    }
+
+    .section__services {
+        .services__block {
+            height: auto;
+        }
+
+        .services__section {
+            margin-top: 20px;
+            height: auto;
+            max-height: 80vh;
+            flex-direction: inherit;
+        }
+
+        .services__item {
+            margin-bottom: 10px;
+        }
+    }
+
+    .court__info__slider {
+        right: 25px;
+    }
+
+    .news__trial__slider__title {
+        max-width: 472px;
+        width: 100%;
+    }
+}
+
+@media (max-width:1080px) {
+
+    .news__trial__slider,
+    .news__slider {
+        padding-top: 10px;
+        height: 373px;
+    }
+
+    .news__trial__slider__title,
+    .news__slider__title {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:900px) {
+    .services__section {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .services__item {
+        height: 100px;
+    }
+}
+
+@media (max-width:740px) {
+    .side__menu__block {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        display: block;
+        background: transparent;
+        z-index: 2;
+        pointer-events: none;
+        // padding: 15px;
+    }
+
+    .side__menu__block_v2,
+    // .header__logo,
+    footer .menu__nav,
+    footer .menu__map {
+        display: none;
+    }
+
+    footer .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+        flex: 0 0 auto;
+    }
+
+    .footer__menu__title {
+        text-align: center;
+    }
+
+    .footer__menu__item {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+
+
+    .side__menu__item {
+        max-width: 60px;
+        position: absolute;
+        pointer-events: all;
+
+        &.side__menu__call {
+            left: 44px;
+            top: 85px;
+        }
+
+        &.eye {
+            left: 44px;
+            bottom: 85px;
+        }
+
+        &.search {
+            bottom: 85px;
+            right: 44px;
+        }
+
+        &.flag {
+            top: 85px;
+            right: 44px;
+        }
+
+        &.logo {
+            top: 43px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            max-width: 109px;
+            width: 100%
+        }
+
+        .side__menu__logo {
+            width: 109px;
+
+            img {
+                width: 100%
+            }
+        }
+    }
+
+    .header__keyfrase {
+        h1 {
+            font-size: 32px;
+            line-height: 37px;
+        }
+
+        h3 {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    .section__first {
+        background: url(../img/header_savoy.png) bottom 0 right 70%/auto 83vh no-repeat, linear-gradient(90deg, #273899 00%, #496dd3 100%)
+    }
+
+    div.section .content {
+        padding-left: 15px;
+    }
+
+    .footer__corp__line {
+        bottom: 45px;
+    }
+
+    .slick-prev {
+        left: 10px;
+        top: 92%;
+    }
+
+    .slick-next {
+        top: 92%;
+        right: 10px;
+    }
+
+    .news__slider__title,
+    .news__trial__slider__title {
+        text-align: center
+    }
+
+    .news__slider .slick-slide>div,
+    .news__trial__slider .slick-slide>div {
+        margin-right: 0
+    }
+
+    a.button {
+        margin: auto;
+    }
+
+    .court__info__slider {
+        right: 0;
+    }
+}
+
+@media (max-width:740px) and (orientation:landscape) {
+    .section__first {
+        background: url(../img/header_savoy.png) bottom right/auto 83vh no-repeat, linear-gradient(90deg, #273899, #496dd3);
+    }
+
+    .news__slider,
+    .news__trial__slider {
+        width: 100%;
+        height: auto;
+
+        .slick-list.draggable {
+            width: 220px;
+            margin: auto;
+        }
+    }
+
+    .news__slider__block,
+    .news__trial__slider__block {
+        width: 100%;
+    }
+
+    .news__trial__slider__title {
+        margin: auto
+    }
+
+    .news__item,
+    .news__trial__item {
+        max-width: 220px;
+    }
+
+    .news__item__img,
+    .news__trial__item__img {
+        margin-bottom: 20px;
+    }
+
+    .news__item__text,
+    .news__trial__item__text {
+        font-size: 18px;
+        overflow: hidden;
+        max-height: 57px;
+    }
+
+    .news__item__date,
+    .news__trial__item__date {
+        margin-bottom: 15px;
+    }
+
+    svg {
+        position: absolute;
+        z-index: 1;
+        top: 43px;
+        left: -73px;
+        z-index: 1;
+    }
+
+    .court__info__slider {
+        right: 25px;
+        z-index: 2;
+    }
+
+    .pc{
+        display: none;
+    }
+
+    .footer__menu__section{
+        padding-top: 85px;
+    }
+    .footer__menu__item{
+        margin-bottom: 5px;
+    }
+
+    .header__menu__side li {
+
+        margin-bottom: 0;
+    
+    }
+    .header__menu__side__item__text{
+        font-size: 19px;
+        line-height: 21px
+    }
+    .header__menu_social{
+        margin-top: 10px;
+    }
+    .header__menu__side_h a.button{
+        margin: 10px auto
+    }
+    h2{
+        font-size: 34px
+    }
+}

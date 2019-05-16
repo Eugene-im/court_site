@@ -1,0 +1,87 @@
+#slickGlobal{
+	background: #234295;
+	z-index: 1;
+}
+
+
+.slick-prev:focus,
+.slick-next:focus{
+	width: 51px;
+	height: 12px;
+	background: url('../img/css_sprites.png') -10px -123px;
+	transform: unset;
+}
+
+.slick-next,
+.slick-prev {
+	width: 51px;
+	height: 12px;
+	background: url('../img/css_sprites.png') -10px -123px;
+	top: -5%;
+	transform: unset;
+}
+
+.slick-prev::before {
+	content: none;
+}
+
+.slick-prev {
+	left: unset;
+	transform: rotate(180deg);
+	right: 200px;
+}
+
+.slick-next {
+	right: 133px;
+}
+
+.slick-next::before,
+.slick-prev::before {
+	font-size: 0;
+	line-height: 1;
+	color: inherit;
+	opacity: inherit;
+}
+
+.slick-dots li button::before,
+.slick-next::before,
+.slick-prev::before {
+	font-family: inherit;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled,
+.slick-prev:hover,
+.slick-next:hover {
+	background: url('../img/css_sprites.png') -10px -91px;
+}
+
+.slick-next.slick-disabled,
+.slick-next:hover {
+	transform: rotate(180deg)
+}
+
+.slick-prev:hover,
+.slick-prev.slick-disabled {
+	transform: rotate(360deg)
+}
+
+.slick-next:focus,
+.slick-prev:focus {
+	outline: none;
+	color: unset;
+}
+
+.news__trial__slider,
+.news__slider {
+
+	.slick-slide>div {
+		margin-right: 51px;
+	}
+}
+
+.slick-prev:focus {
+	transform: rotate(180deg);
+}
