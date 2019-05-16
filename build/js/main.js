@@ -43,6 +43,7 @@ $('.global__overlay,.header__menu__top_h .header__logo').click(function () {
 })
 
 const conf = '.obl__3,.obl__0,.obl__2,.obl__1';
+const conf2 = '.logo__3,.logo__0,.logo__2,.logo__1';
 const color1 = '#3D5798';
 const color2 = '#ffffff';
 const color3 = '#F3E3C4';
@@ -67,18 +68,38 @@ const conf_news = {
     slidesToShow: 3,
     slidesToScroll: 3,
     infinite: false,
-    autoplay: true
+    autoplay: true,
+    responsive: [{
+            breakpoint: 1080,
+            settings: {
+                slidesToScroll: 2,
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 1
+            }
+        }
+    ]
 };
 
 function hov(part) {
+    $(slider_court).slick('slickGoTo', part);
     $('.obl__' + part).attr("fill", color1);
     $('.logo__' + part).attr("fill", color2);
-    $(slider_court).slick('slickGoTo', part);
 };
 
 function unhov(part) {
     $('.obl__' + part).attr("fill", color3);
     $('.logo__' + part).attr("fill", color1);
+};
+
+function unhov_all() {
+    $(conf).attr("fill", color3);
+    $(conf2).attr("fill", color1);
 };
 
 function mouseWheel($slider) {
@@ -97,7 +118,7 @@ function change_obl() {
 };
 
 function mouseWheelHandler(event) {
-    event.preventDefault();
+    // event.preventDefault();
     const $slider = event.data.$slider;
     const delta = event.originalEvent.deltaY;
     if ($slider.slick('slickCurrentSlide') != 0 || $slider.slick('slickCurrentSlide') != 5) $(menu).addClass('top');
@@ -110,22 +131,32 @@ function mouseWheelHandler(event) {
     }
 }
 
+$slider.on('swipe',function(){
+    if ($slider.slick('slickCurrentSlide') != 0 || $slider.slick('slickCurrentSlide') != 5) $(menu).addClass('top');
+    if ($slider.slick('slickCurrentSlide') == 0) $(menu).removeClass('top');
+    if ($slider.slick('slickCurrentSlide') == 5) $(menu).removeClass('top');
+});
+
+
 $(conf).mouseover(function () {
-    var part = $(this).attr('class').substr(-1);
-    hov(part);
     $(slider_court).slick('slickPause');
+    var part = $(this).attr('class').substr(-1);
+    unhov_all();
+    hov(part);
 });
 $(conf).mouseenter(function () {
+    $(slider_court).slick('slickPause');
     var part = $(this).attr('class').substr(-1);
     hov(part);
-    $(slider_court).slick('slickPause');
 });
 
 $(conf).mouseleave(function () {
     $(slider_court).slick('slickPlay');
 });
 
-$slider.on('init', () => {mouseWheel($slider)}).slick(slickconf);
+$slider.on('init', () => {
+    mouseWheel($slider)
+}).slick(slickconf);
 
 $(slider_court).on('afterChange', change_obl).slick(conf_court);
 
