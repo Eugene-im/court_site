@@ -131,8 +131,8 @@
     <ul class="side__menu__block side__menu__block_v2">
         <li class="side__menu__item logo"><a href="/index.html" class="side__menu__logo"><img src="./img/logo_g.png" alt=""></a></li>
         <li class="side__menu__item side__menu__call"><a href="#"><i class="icon icon_menu_g"></i></a></li>
-        <li class="side__menu__item"><a href="#"><i class="icon icon_eye_g"></i></a></li>
-        <li class="side__menu__item"><a href="#"><i class="icon icon_search_g"></i></a></li>
+        <li class="side__menu__item eye"><a href="#"><i class="icon icon_eye_g"></i></a></li>
+        <li class="side__menu__item search"><a href="#"><i class="icon icon_search_g"></i></a></li>
         <li class="side__menu__item flag"><a href="#"><i class="icon icon_flag_ua"></i></a></li>
     </ul>
 
@@ -198,39 +198,44 @@
     
     <footer class="section section_last">
         <div class="content">
-            <div class="footer__menu__block">
-                    <!-- <div class="footer__menu__block footer_nav"> -->
+            <ul class="side__menu__block mobile">
+                    <li class="side__menu__item logo"><a href="/index.html" class="side__menu__logo"><img src="./img/logo_w.png" alt=""></a></li>
+                <li class="side__menu__item side__menu__call"><a href="#" tabindex="-1"><i
+                            class="icon icon_menu_w"></i><span class="side__menu__item__text">МЕНЮ</span></a></li>
+                <li class="side__menu__item eye"><a href="#" tabindex="-1"><i class="icon icon_eye_w"></i></a></li>
+                <li class="side__menu__item search"><a href="#" tabindex="-1"><i class="icon icon_search_w"></i></a></li>
+                <li class="side__menu__item flag"><a href="#" tabindex="-1"><i class="icon icon_flag_ua"></i></a></li>
+            </ul>
+            <div class="footer__menu__block menu__nav">
+                <!-- <div class="footer__menu__block footer_nav"> -->
                 <h4 class="footer__menu__title">Навігація</h4>
                 <ul class="footer__menu__section">
-                    <li class="footer__menu__item"><a class="footer__menu__item__text" href="/subpage.html">Громадянам</a></li>
+                    <li class="footer__menu__item"><a class="footer__menu__item__text" href="/subpage.html">Громадянам</a>
+                    </li>
                     <li class="footer__menu__item"><a class="footer__menu__item__text" href="/subpage.html">Судово -
                             адміністративні послуги</a></li>
-                    <li class="footer__menu__item"><a class="footer__menu__item__text" href="/subpage.html">Діяльність суду</a>
+                    <li class="footer__menu__item"><a class="footer__menu__item__text" href="/subpage.html">Діяльність
+                            суду</a>
                     </li>
-                    <li class="footer__menu__item"><a class="footer__menu__item__text" href="/subpage.html">Прес-служба</a></li>
+                    <li class="footer__menu__item"><a class="footer__menu__item__text" href="/subpage.html">Прес-служба</a>
+                    </li>
                     <li class="footer__menu__item"><a class="footer__menu__item__text" href="/subpage.html">ЄСПЛ</a></li>
                     <li class="footer__menu__item"><a class="footer__menu__item__text" href="/subpage.html">Новини</a></li>
                 </ul>
             </div>
             <div class="footer__menu__block menu__contacts">
-                <h4 class="footer__menu__title">КОНТАКТИ</h4>
+                <h4 class="footer__menu__title pc">КОНТАКТИ</h4>
                 <ul class="footer__menu__section">
-                    <li class="footer__menu__item"><a class="footer__menu__item__text" href="#">Пн-Пт: з 8:30 до
+                    <li class="footer__menu__item pc"><a class="footer__menu__item__text" href="#">Пн-Пт: з 8:30 до
                             17:00
                             </br>
                             Перерва 12:30 - 13:00</a></li>
-                    <li class="footer__menu__item">
+                    <li class="footer__menu__item pc">
                         <a class="footer__menu__item__text" href="tel:+380432551555">
                             <span class="footer__menu__item__text_small">Телефон довіри:</span>
                             <span class="footer__menu__item__text_imp">(0432)55-15-55</span>
                         </a>
                     </li>
-                    <!-- <li class="footer__menu__item">
-                        <a class="footer__menu__item__text" href="tel:+380432551555">
-                            <span class="footer__menu__item__text_small">Телефон довіри:</span>
-                            <span class="footer__menu__item__text_imp">(0432)55-15-55</span>
-                        </a>
-                    </li> -->
                     <li class="footer__menu__item">
                         <a class="footer__menu__item__text" href="tel:+380432551555">
                             <span class="footer__menu__item__text_small">Телефон довіри:</span>
@@ -245,7 +250,8 @@
                         <a class="footer__menu__item__text_imp_social" href="https://www.facebook.com/7aas.gov.ua/">
                             <i class="icon icon_s_facebook_w"></i>
                         </a>
-                        <a class="footer__menu__item__text_imp_social" href="https://www.instagram.com/vinnytsia_administrative_court/">
+                        <a class="footer__menu__item__text_imp_social"
+                            href="https://www.instagram.com/vinnytsia_administrative_court/">
                             <i class="icon icon_s_instagram_w"></i>
                         </a>
                         <a class="footer__menu__item__text_imp_social" href="https://www.youtube.com/user/vaascourt">
@@ -257,7 +263,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer__menu__block">
+            <div class="footer__menu__block menu__map">
                 <h4 class="footer__menu__title">ЯК НАС ЗНАЙТИ</h4>
                 <a href="https://goo.gl/maps/DrnNdxnuV6eHpybZA" class="footer__menu__map">
                     <img src="./img/map_local.png" alt="map_local_where">
@@ -266,11 +272,14 @@
                     <div class="button__text">Показати на карті</div>
                 </a>
             </div>
+            <a href="https://goo.gl/maps/DrnNdxnuV6eHpybZA" class="button button_more mobile">
+                <div class="button__text">Показати на карті</div>
+            </a>
         </div>
-            <div class="footer__corp__line">
-                <a href="#" class="footer__corp__owner">All rights reserved. 7AAC 2019</a>
-                <a href="#" class="footer__corp__designer">Design by <span>Winstars</span></a>
-            </div>
+        <div class="footer__corp__line">
+            <a href="#" class="footer__corp__owner">All rights reserved. 7AAC 2019</a>
+            <a href="#" class="footer__corp__designer">Design by <span>Winstars</span></a>
+        </div>
     </footer>
     <div class="global__overlay">
         

@@ -68,7 +68,7 @@ const conf_news = {
     slidesToShow: 3,
     slidesToScroll: 3,
     infinite: false,
-    autoplay: true,
+    // autoplay: true,
     responsive: [{
             breakpoint: 1080,
             settings: {
@@ -77,12 +77,24 @@ const conf_news = {
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 670,
             settings: {
                 slidesToScroll: 1,
+                // centerMode: true,
+                // centerPadding: '20px',
+                slidesToShow: 1
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '20px',
                 slidesToShow: 1
             }
         }
+
     ]
 };
 
