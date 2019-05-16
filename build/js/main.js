@@ -84,7 +84,7 @@ function unhov(part) {
 function mouseWheel($slider) {
     $(window).on('wheel', {
         $slider: $slider
-    }, mouseWheelHandler)
+    }, mouseWheelHandler);
 };
 
 function change_obl() {
