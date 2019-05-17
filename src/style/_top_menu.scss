@@ -43,7 +43,9 @@
 
 .menu__top__item__link,
 .menu__top__item__text {
-    color: #D9C59F;
+    // color: #D9C59F;
+    color: #27479A;
+    // 27479A
 }
 
 .menu__top__line {
@@ -66,11 +68,13 @@
     border-bottom: 2px solid transparent;
 
     &:hover {
-        border-color: #27479A;
+        border-color: #D9C59F;
+        // border-color: #27479A;
 
         & .menu__top__item__link,
         & .menu__top__item__text {
-            color: #27479A;
+            color: #D9C59F;
+            // color: #27479A;
         }
     }
 }

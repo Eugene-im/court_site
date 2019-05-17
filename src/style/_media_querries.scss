@@ -62,6 +62,9 @@
 }
 
 @media (max-width:740px) {
+    .mobile, a.mobile{
+        display: block;
+    }
     .side__menu__block {
         width: 100%;
         height: 100%;
@@ -192,11 +195,23 @@
     }
 
     a.button {
-        margin: auto;
+        // margin: auto;
     }
 
     .court__info__slider {
         right: 0;
+    }
+
+    .side__menu__block.mobile {
+        position: static;
+        height: 170px;
+    }
+
+    .header__menu.part2{
+        display: none;
+    }
+    .subpage__article__text{
+        margin: 0px auto 50px;
     }
 }
 
@@ -260,33 +275,38 @@
         z-index: 2;
     }
 
-    .pc{
+    .pc {
         display: none;
     }
 
-    .footer__menu__section{
+    .footer__menu__section {
         padding-top: 85px;
     }
-    .footer__menu__item{
+
+    .footer__menu__item {
         margin-bottom: 5px;
     }
 
     .header__menu__side li {
 
         margin-bottom: 0;
-    
+
     }
-    .header__menu__side__item__text{
+
+    .header__menu__side__item__text {
         font-size: 19px;
         line-height: 21px
     }
-    .header__menu_social{
+
+    .header__menu_social {
         margin-top: 10px;
     }
-    .header__menu__side_h a.button{
+
+    .header__menu__side_h a.button {
         margin: 10px auto
     }
-    h2{
+
+    h2 {
         font-size: 34px
     }
 }
