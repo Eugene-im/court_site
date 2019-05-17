@@ -388,6 +388,10 @@ a.button {
 	&:hover {
 		text-decoration: underline;
 	}
+	a{
+		vertical-align: middle;
+		display: inline-block;
+	}
 }
 
 .footer__menu__item__text_imp,
@@ -399,6 +403,7 @@ a.button {
 footer {
 	z-index: 2;
 	position: relative;
+
 	.content {
 		justify-content: space-between;
 		align-items: flex-start;
@@ -406,7 +411,8 @@ footer {
 	}
 }
 
-a.mobile, .mobile{
+a.mobile,
+.mobile {
 	display: none;
 }
 

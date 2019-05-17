@@ -130,7 +130,7 @@ function change_obl() {
 };
 
 function mouseWheelHandler(event) {
-    // event.preventDefault();
+    event.preventDefault();
     const slider = event.data.slider;
     const delta = event.originalEvent.deltaY;
     if (slider.slick('slickCurrentSlide') != 0 || slider.slick('slickCurrentSlide') != 5) $(menu).addClass('top');
