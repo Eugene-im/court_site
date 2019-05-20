@@ -40,6 +40,12 @@ $('.header__menu__side_h .icon.icon_x_g').click(function () {
     $('.header__menu__side_h').hide();
 })
 
+$('.header__menu__side_h .icon.icon_back_g').click(function () {
+    $(conf_submSide).css('display','none');
+    $('#topmenu').css('display','block');
+})
+
+
 $('.global__overlay,.header__menu__top_h .header__logo').click(function () {
     $('.global__overlay').hide();
     $('.header__menu__top_h').hide();
