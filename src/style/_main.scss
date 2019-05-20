@@ -174,6 +174,7 @@ header {
 
 i.icon {
 	display: inline-block;
+	vertical-align: inherit;
 }
 
 .header__button {
@@ -560,4 +561,8 @@ a.mobile,
 
 .hover {
 	background: #000000;
+}
+
+#submenu1,#submenu2,#submenu3,#submenu4,#submenu5,#submenu6{
+	display: none;
 }
