@@ -1,7 +1,7 @@
 var conf_submSide = '#submenu1,#submenu2,#submenu3,#submenu4,#submenu5,#submenu6';
 var conf_topS = '.sub1,.sub2,.sub3,.sub4,.sub5,.sub6';
-var conf_sm="#sm1,#sm2,#sm3,#sm4,#sm5"
-var conf_smxs="#sm1s,#sm2s,#sm3s,#sm4s,#sm5s"
+var conf_sm="#sm1,#sm2,#sm3,#sm4,#sm5,#sm6"
+var conf_smxs="#sm1s,#sm2s,#sm3s,#sm4s,#sm5s,#sm6s"
 
 $('.side__menu__call').click(function () {
     $('#topmenu').css('display','block');

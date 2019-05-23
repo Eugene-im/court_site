@@ -119,7 +119,7 @@ header {
 .header__menu {
 	display: flex;
 	justify-content: space-between;
-	max-width: 512px;
+	max-width: 700px;
 	width: 100%
 }
 
@@ -252,9 +252,11 @@ i.icon {
 .news__trial__item__img,
 .news__item__img {
 	margin-bottom: 33px;
+	height: 208px;
 
 	img {
 		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -458,6 +460,7 @@ a.mobile,
 	display: block;
 	max-width: 318px;
 	width: 100%;
+	color:#fff;
 
 	img {
 		width: 100%;
