@@ -76,15 +76,6 @@ function mouseWheel(slider) {
     }, mouseWheelHandler);
 };
 
-function change_obl() {
-    var x = $(this).slick('slickCurrentSlide');
-    var y = conf.split(',');
-    for (var i = 0; i < y.length; i++) {
-        unhov(i);
-    }
-    hov(x);
-};
-
 function mouseWheelHandler(event) {
     event.preventDefault();
     const slider = event.data.slider;
@@ -98,6 +89,15 @@ function mouseWheelHandler(event) {
         slider.slick('slickPrev');
     }
 }
+
+function change_obl() {
+    var x = $(this).slick('slickCurrentSlide');
+    var y = conf.split(',');
+    for (var i = 0; i < y.length; i++) {
+        unhov(i);
+    }
+    hov(x);
+};
 
 slider.on('swipe',function(){
     if (slider.slick('slickCurrentSlide') != 0 || slider.slick('slickCurrentSlide') != 5) $(menu).addClass('top');
@@ -122,9 +122,9 @@ $(conf).mouseleave(function () {
     $(slider_court).slick('slickPlay');
 });
 
-slider.on('init', () => {
-    mouseWheel(slider)
-}).slick(slickconf);
+// slider.on('init', () => {
+//     mouseWheel(slider)
+// }).slick(slickconf);
 
 $(slider_court).on('afterChange', change_obl).slick(conf_court);
 
