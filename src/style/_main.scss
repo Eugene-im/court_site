@@ -569,3 +569,89 @@ a.mobile,
 #submenu1,#submenu2,#submenu3,#submenu4,#submenu5,#submenu6{
 	display: none;
 }
+
+@keyframes animationpulse{
+	0%, 100%, 20%{transform:scale(1,1)}
+	10%{transform:scale(1.1,1.1)}
+}
+
+.telegramim_pulse {
+	animation: animationpulse 2s infinite;
+}
+
+.telegramim_shadow {
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+}
+
+
+.telegramim_button {
+	opacity: 1;
+	cursor: pointer;
+	display: block;
+	padding: 10px 10px 10px 20px;
+	text-decoration: none !important;
+	text-transform: none;
+	font-size: 14px;
+	width: 125px;
+	background: #27A5E7;
+	box-shadow: 1px 1px 5px #27A5E7;
+	color: #FFF;
+	border-radius: 37px;
+	bottom: calc(42% - 3.75px);
+	right: calc(2% - 2.25px);
+	z-index: 1000;
+}
+
+#telegramim_fixed,
+.telegramim_button {
+	position: fixed;
+	letter-spacing: normal;
+}
+
+.audit-b,
+.opt-excel-btn,
+.opt-excel-btn-txt,
+.telegramim_button {
+	text-align: center;
+}
+
+a {
+	cursor: pointer;
+	color: #333;
+	transition: color .2s ease;
+}
+
+a {
+	background-color: transparent;
+	color: #337ab7;
+	text-decoration: none;
+}
+
+.ftelegramim {
+	display: inline-block;
+	font: normal normal normal 14px/1 telegramimfont;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.ftelegramim-telegram-logo:before {
+	content: "";
+	background: url(./img/icon-telegram.svg) no-repeat;
+	width: 15px;
+	height: 15px;
+	display: block;
+	top: 13px;
+	left: 14px;
+	position: absolute;
+}
+
+.telegramim_pulse:hover {
+	animation: linear;
+	color: #FFF !important;
+}
+
+.telegramim_shadow:hover {
+	box-shadow: 1px 1px 15px rgba(0, 0, 0, .5) !important;
+}
